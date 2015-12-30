@@ -1,7 +1,7 @@
 * Paste a link to your [USERNAME].github.io repository.
   * Ans: https://gwoz.github.io/
 * Explain how to create a repository on GitHub and clone the repository to your local computer to a non-technical person.
-  * Ans: Configure the remote location where the files will be saved by creating a repository on GitHub. Copy the repository URL, which will be the location of the files, and then use the "git clone" command in your terminal to link your computer to this remote location. Going forward you can create or update files on your local computer and then decide when you want to save them to the GitHub remote location.
+  * Ans: Configure the remote location where the files will be saved by creating a repository on GitHub. Copy the repository URL, which will be the location of the files, and then use the "git clone" command in your terminal to link your computer to this remote location. Going forward you can create or update files on your local computer and then decide when you want to send them to the GitHub remote location.
 * Describe what open source means.
   * Ans: Open source means what you create is available to use, modify, or distribute, with minimal limitations.
 * What do you think about Open Source? Does it make you nervous or protective? Does it feel like utopia?
