@@ -1,4 +1,4 @@
-![Site Map](/site-map.png)
+![Site Map](/imgs/site-map.png)
 
 * What are the 6 Phases of Web Design?
 * Ans: Information Gathering, Planning, Design, Development, Testing & Delivery, and Maintenance
@@ -19,4 +19,4 @@
 * Ans: User experience is how someone feels when using a product or software application. User experience design is the process of studying workflows of users and optimizing for great user experiences using techniques like surveys, wireframing, and AB testing. It's valuable because we are presented with an ever increasing number of options for everything we do with limited costs of switching. Focusing on user experience can make your product or service stand out.
 
 * Which parts of the challenge did you find tedious?
-* Ans: I found the research of user experience to be tedious. There are a lot of different opinions on the defenition of it, how to apply it, and how to measure it. It seems like something that is continually evolving.
+* Ans: I found the creating the inline image link to be tedious. I struggled with finding the correct path to use.
