@@ -1,4 +1,4 @@
-![Alt text](/imgs/site-map.png "Site Map")
+![Site Map](week-2/imgs/site-map.png "Site Map")
 
 * What are the 6 Phases of Web Design?
 * Ans: Information Gathering, Planning, Design, Development, Testing & Delivery, and Maintenance
