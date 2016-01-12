@@ -1,0 +1,91 @@
+/*
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+What CSS did you use to modify the element style (like size, color, etc.)
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+*/
+
+header {
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  padding-bottom: 15px;
+}
+
+header p {
+  margin: 0;
+}
+
+.company {
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+.first-letter {
+  font-size: 1.5em;
+}
+
+.inc {
+  font-size: .75em;
+}
+
+.address1, .address2 {
+  font-size: .8em;
+}
+
+a {
+  color: #800080;
+}
+
+a:visited {
+  color: #FF0000;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000080;
+}
+
+.links .column {
+  width: 250px;
+  margin: 0px 10px;
+  padding: 0px 5px;
+  float: left;
+}
+
+li {
+  height: 60px;
+  margin-top: 5px;
+}
+
+p {
+  clear: both;
+}
+
+.column span {
+  display: block;
+  font-size: .7em;
+}
+
+footer img {
+  display: block;
+  margin: 0 auto;
+}
+
+footer p {
+  font-size: .7em;
+}
+
+.geico {
+  text-align: center;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 15px 0;
+}
+
+.contact {
+  border-bottom: 1px solid gray;
+  padding-bottom: 15px;
+}
