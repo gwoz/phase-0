@@ -1,9 +1,20 @@
 /*
 What is important to know when linking an external file (like a stylesheet) to an HTML file?
+Ans: It's important to know that each part of the link element must be included and the path must be accurate. 
+If it's not the stylesheet will be ommitted and the basic HTML will be displayed to the user. It's also important to know
+that multiple stylesheets can be used so make sure you are pointing to the correct one!
 What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+Ans: We created spans for the first letter of the title so we could make only that text bigger. We also tried to use em's
+instead of pixels to simplify the CSS and make it easier to maintain.
 What CSS did you use to modify the element style (like size, color, etc.)
+Ans: We used font-size, font-weight, text-transform, and color. Text-transform was useful so we could maintain semantic HTML by
+typing the information without uppercase characters. We added uppercase characters in the CSS instead.
 Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+Ans: We primarily used classes and pseudo classes. We thought it would be easier to use these instead of having to specify multiple ID's that represent
+the same thing.
 When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+Ans: I think we had cleaner code. We tried to use semantic HTML5 elements and avoided including styling elements in the HTML. However, we have not
+achieved the success that Berkshire Hathaway has so maybe they're on to something ;)
 */
 
 header {
