@@ -1,6 +1,6 @@
 # Screenshots of Steps 1 - 9
 
-![Step1](imgs/Step1-Change the colors.png)
+![Step1](imgs/Step1-Change the Colors.png)
 ![Step2](imgs/Step2-Column.png)
 ![Step3](imgs/Step3-Row.png)
 ![Step4](imgs/Step4-Make Equidistant.png)
