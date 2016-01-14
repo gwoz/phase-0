@@ -1,14 +1,14 @@
 # Screenshots of Steps 1 - 9
 
-![Step1](/imgs/Step1-Change the colors.png)
-![Step2](/imgs/Step2-Column.png)
-![Step3](/imgs/Step3-Row.png)
-![Step4](/imgs/Step4-Make Equidistant.png)
-![Step5](/imgs/Step5-Squares.png)
-![Step6](/imgs/Step6-Footer.png)
-![Step7](/imgs/Step7-Header.png)
-![Step8](/imgs/Step8-Sidebar.png)
-![Step9](/imgs/Step9-Get Creative.png)
+![Step1](imgs/Step1-Change the colors.png)
+![Step2](imgs/Step2-Column.png)
+![Step3](imgs/Step3-Row.png)
+![Step4](imgs/Step4-Make Equidistant.png)
+![Step5](imgs/Step5-Squares.png)
+![Step6](imgs/Step6-Footer.png)
+![Step7](imgs/Step7-Header.png)
+![Step8](imgs/Step8-Sidebar.png)
+![Step9](imgs/Step9-Get Creative.png)
 
 
 # How can you use Chrome's DevTools inspector to help you format or position elements?
