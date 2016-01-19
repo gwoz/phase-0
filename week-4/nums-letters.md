@@ -67,14 +67,18 @@ Ans: Ruby handles these using the + - * and / operators on integers and floats.
 Ans: Integers are numbers that are negative, positive or zero without decimal places. Floats are numbers that are negative, positive, or zero with decimal places.
 
 **What is the difference between integer and float division?**
+
 Ans: Integer division displays the result after rounding DOWN to the nearest integer. Float division displays the result including decimal places.
 
 **What are strings? Why and when would you use them?**
+
 Ans: Strings are a group of characters including numbers, letters, symbols, or spaces that are enclosed by '' or "". You would typically use strings to hold letters (Ex: Names), but you could also use them to hold a combination of characters (Ex: Addresses, sentences, dates)
 
 **What are local variables? Why and when would you use them?**
+
 Ans: Local variables are limited to a method you create. You would use them to make only certain information available to use in a method (Ex: You want to give a user the ability to set their own timezone, but you do not want this to affect the timezone for the entire program)
 
 **How was this challenge? Did you get a good review of some of the basics?**
+
 Ans: I liked this challenge. It's my first time digging into numbers since gradeschool so it was a nice refresher! It was tedious at times because I've worked with each of these concepts before, but it's nice to finally get started with Ruby.
 
