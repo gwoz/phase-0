@@ -1,0 +1,16 @@
+# Simple Substrings
+
+# I worked on this challenge [by myself].
+
+
+# Your Solution Below
+
+def welcome(city_state)
+	if city_state.include? "CA"
+		"Welcome to California"
+	else
+		"You should move to California"
+	end
+end
+
+
