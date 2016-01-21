@@ -1,17 +1,18 @@
 # Calculate a Grade
 
 # I worked on this challenge [with: Pietro Martini/Mike Gwozdek].
+
+# Your Solution Below
 def get_grade(average)
 	if average >= 90
-		puts "A"
+		return "A"
 	elsif average >= 80
-		puts "B"
+		return "B"
 	elsif average >= 70
-		puts "C"
+		return "C"
 	elsif average >= 60
-		puts "D"
+		return "D"
 	else
-		puts "F"	
+		return "F"	
 	end	
 end	
-# Your Solution Below
