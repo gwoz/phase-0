@@ -40,44 +40,50 @@
 # 1. Initial Solution
 
 def pad!(array, min_size, value = nil) #destructive
+  new_array = []
   if array.length >= min_size
-    return array
+    array.map! {|x| new_array << x}
   elsif array.length < min_size
     counter = 0
     until counter == min_size do
       if counter >= array.length
-        array[counter] = value
+        array.map! {|x| new_array[counter] = value}
         counter += 1
       elsif counter <= min_size
-        array[counter] = array[counter]
+        array.select! {|x| new_array[counter] = array[counter]}
         counter += 1
       end
     end
   end
-  return array.map! {|x| x }
+  p array.object_id #Original Object ID
+  p new_array.object_id #New Object ID
+  return new_array
 end
 
- 
+ p pad!([4,5,7],9, "destructive!")
 
 def pad(array, min_size, value = nil) #non-destructive
-  input = array
   output = []
-  if input.length >= min_size
-    return input
-  elsif input.length < min_size
+  if array.length >= min_size
+    return array
+  elsif array.length < min_size
    counter = 0
    until counter == min_size do 
-    if counter >= input.length
-      output << value
+    if counter >= array.length
+      output.insert(counter,value)
       counter += 1  
     elsif counter <= min_size
-      output << input[counter] 
+      output.insert(counter,array[counter])
       counter += 1
     end     
    end
   end
+  p array.object_id #Original Object ID
+  p output.object_id #New Object ID
   return output
 end 
+
+ p pad([9,2,8,0,1],12, "non-destructive!")
 
 # 3. Refactored Solution
 
