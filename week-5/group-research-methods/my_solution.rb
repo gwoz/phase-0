@@ -6,18 +6,22 @@ i_want_pets = ["I", "want", 3, "pets", "but", "only", "have", 2]
 my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, "Bogart" => 4, "Poly" => 4, "Annabelle" => 0}
 
 # # Person 1's solution
-# def my_array_finding_method(source, thing_to_find)
-#   source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
-# end
+def my_array_finding_method(source, thing_to_find)
+  source.find_all {|x| x.to_s.include? thing_to_find}
+end
 
-# def my_hash_finding_method(source, thing_to_find)
-#   source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
-# end
+def my_hash_finding_method(source, thing_to_find)
+  source.flat_map {|k,v| k if v == thing_to_find}.to_a.compact
+end
 
 # # Identify and describe the Ruby method(s) you implemented.
-# #
-# #
-# #
+=begin
+.find_all -> This allowed me to iterate through each item in the i_want_pets array and keep only those that included the string I was looking for.
+.include? -> This lets you check if the string contains certain text.
+.flat_map -> This returns a new array of each element concatenated
+.compact -> This removes any nil elements from an array. The flat_map method will return nil if the value does not meet
+my criteria so I had to remove them from the new array. This method quickly does that. 
+=end
 
 def my_array_modification_method!(pets, thing_to_modify)
   pets.map! do |x|
@@ -185,21 +189,13 @@ def my_hash_splitting_method(source, age)
 end
 
 # Identify and describe the Ruby method(s) you implemented.
-#
-#
-#
+=begin
+.map -> This creates a new array of values after each element is evaluated by the following code block
+.to_a -> Once I had an array of values that met the criteria, I put all of them inside another array for grouping
+purposes. One group was integers and the other was the remaining characters.
+.compact -> This eliminates any nil values from an array. My approach resulted in nil values when false which cluttered 
+the ending array with unnecessary indexes.
+.select -> This creates a new array of values after each element is evaluated by the following code block. This was
+useful to only keep the key/value pairs that met a certain criteria.
 
-
-# Release 1: Identify and describe the Ruby method you implemented. Teach your
-# accountability group how to use the methods.
-#
-#
-#
-
-
-# Release 3: Reflect!
-# What did you learn about researching and explaining your research to others?
-#
-#
-#
-#
+=end
