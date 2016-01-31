@@ -12,57 +12,33 @@
 
 
 # 0. Pseudocode
-# NON-DESTRUCTIVE
-# What is the input? NON-DESTRUCTIVE: array of non-neg integer, minimum number, and default value
-# What is the output? NON-DESTRUCTIVE: New array with at least minimum length
-# What are the steps needed to solve the problem?
-# create container to accept input values
-# create empty container for output
-# if array is equal to length return array
-# then set output equal to input array
-# if container is less than minimum number, set default value for empty positions
-# then set output equal to the array + default values up to minimum length
-
-#DESTRUCTIVE MUHAHAHAHAHA
-# What is the input?
-# What is the ou
-# Steps:
 =begin
- FOR each value in the original array
-  UNTIL we've reached the minimum size
-    IF there is a value in that position
-      THEN return the same value
-    ELSE 
-      RETURN the placeholder
+What is the input? Array of non-negative integer, minimum length, and default value
+What is the output? New array with at least minimum length where empty positions are
+replaced with the default value
+What are the steps needed to solve the problem?
+create container to accept input values
+create empty container for output
+if array is equal to length return array
+then set output equal to input array
+if container is less than minimum number, set default value for empty positions
+then set output equal to the array + default values up to minimum length
 =end
-
 
 # 1. Initial Solution
 
-def pad!(array, min_size, value = nil) #destructive
-  new_array = []
-  if array.length >= min_size
-    array.map! {|x| new_array << x}
-  elsif array.length < min_size
-    counter = 0
-    until counter == min_size do
-      if counter >= array.length
-        array.map! {|x| new_array[counter] = value}
-        counter += 1
-      elsif counter <= min_size
-        array.select! {|x| new_array[counter] = array[counter]}
-        counter += 1
-      end
-    end
+def pad!(array, min_size, value = nil) #destructive (Passes all tests)
+  if min_size <= array.length
+    Array.new(array)
+  elsif min_size > array.length
+    placeholders_needed = (min_size - array.length)
+    placeholder_array = Array.new(placeholders_needed, value)
+    new_array = array.map! {|number| array.any? ? number : value}
+    new_array = new_array.concat(placeholder_array)
   end
-  p array.object_id #Original Object ID
-  p new_array.object_id #New Object ID
-  return new_array
 end
 
- p pad!([4,5,7],9, "destructive!")
-
-def pad(array, min_size, value = nil) #non-destructive
+def pad(array, min_size, value = nil) #non-destructive (Fails non-destructive test only)
   output = []
   if array.length >= min_size
     return array
@@ -83,10 +59,43 @@ def pad(array, min_size, value = nil) #non-destructive
   return output
 end 
 
- p pad([9,2,8,0,1],12, "non-destructive!")
-
 # 3. Refactored Solution
 
+# We were unable to create a working initial solution and did not have time to refactor. Our initial 
+# solution for the destructive method includes much of what we learned during troubleshooting both.
 
 
 # 4. Reflection
+=begin
+Were you successful in breaking the problem down into small steps?
+Ans: We were intitially successful and thought we understood the problem, but were unable to solve for the 
+non-destructive method.
+
+Once you had written your pseudocode, were you able to easily translate it into code? What difficulties 
+and successes did you have?
+Ans: Initially we were able to do so and created a solution that appeared to solve the problem for both methods. 
+However we could not figure out why we were failing tests that indicated our array object_id was changing for the 
+non-destructive methods.
+
+Was your initial solution successful at passing the tests? If so, why do you think that is? If not, 
+what were the errors you encountered and what did you do to resolve them?
+Ans: No, our intitial solution was not successful. We struggled with determining how to meet the requirements while 
+not changing the object_id for the non-destructive method. We tried several ways to manipulate the original array without
+a change to the object_id, but ultimately we kept failing one test.
+
+When you refactored, did you find any existing methods in Ruby to clean up your code?
+And: We learned several new methods through troubleshooting, but ultimately could not refactor.
+
+How readable is your solution? Did you and your pair choose descriptive variable names?
+Ans: Our solution has descriptive variable names and we think our code is readable, although we know there is a lot 
+that could be improved on.
+
+What is the difference between destructive and non-destructive methods in your own words?
+Ans: Destructive methods will change the original object and non-destructive methods will only display a transformation 
+of the original object without actually changing it.
+
+=end
+
+
+
+
