@@ -1,27 +1,35 @@
 # Research Methods
 
-# We spent [several] of hours on this challenge.
+# We spent [several] hours on this challenge.
 
 i_want_pets = ["I", "want", 3, "pets", "but", "only", "have", 2]
 my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, "Bogart" => 4, "Poly" => 4, "Annabelle" => 0}
 
 # # Person 1's solution
 def my_array_finding_method(source, thing_to_find)
-  source.find_all {|x| x.to_s.include? thing_to_find}
+  source.grep(/#{thing_to_find}/) 
 end
 
 def my_hash_finding_method(source, thing_to_find)
-  source.flat_map {|k,v| k if v == thing_to_find}.to_a.compact
+  source.find_all{ |key, value| value == thing_to_find }.map{|key, value| key}
 end
 
 # # Identify and describe the Ruby method(s) you implemented.
-=begin
-.find_all -> This allowed me to iterate through each item in the i_want_pets array and keep only those that included the string I was looking for.
-.include? -> This lets you check if the string contains certain text.
-.flat_map -> This returns a new array of each element concatenated
-.compact -> This removes any nil elements from an array. The flat_map method will return nil if the value does not meet
-my criteria so I had to remove them from the new array. This method quickly does that. 
-=end
+# I implemented "my_array_finding_method". It uses the "grep" built-in to search
+# through all the elements of an array for a given character. In the end, it returns
+# a new array of all the elements of the original array that had an occurance of the given character. 
+#
+# To use, for the first argument, you pass in an array comprised of a word or number for each element.
+# The second argument is a character you want to match in any of the elements of the array passed as argument 1.
+#
+
+# I also implemented "my_hash_finding_method". It first uses the find_all method to
+# create a new array of hashes whose value equals the method's second integer argument.
+# This array of hashes is passed to map to iterate over and return just the list of keys.
+# 
+# To use, for the first argument, you pass in a hash whose keys have integer values. The second
+# argument is an integer. All keys whose values match that second argument will be returned as a 
+# new array.
 
 def my_array_modification_method!(pets, thing_to_modify)
   pets.map! do |x|
