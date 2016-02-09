@@ -2,39 +2,63 @@ Release 1
 
 Introduction
 Did you learn anything new about JavaScript or programming in general?
+ANS: Yes, I learned about binary and the evolution of JavaScript. I think it's fascinating how these languages were created without the collaboration tools we use everyday.
+
 Are there any concepts you feel uncomfortable with?
+ANS: No, the concepts seem very familiar to what we learned in Ruby so far. I've heard that once you know an object oriented programming language you can learn new ones quickly. We'll see how that goes this week!
 
 Ch. 1: Values, Types, and Operators
 Identify two similarities and two differences between JavaScript and Ruby syntax with regard to numbers, arithmetic, strings, booleans, and various operators.
+ANS: Two similarities would be the use of the operators + - * / % as well as logical operators of && ||. One difference is the automatic type conversion where JavaScript has built in assumptions for how the data should be transformed so an error is not produced. A second difference is JavaScript's use of both null and undefined instead of just null.
+
 
 Ch. 2: Program Structure
 What is an expression?
+ANS: An expression is a fragment of code that produces a value in JavaScript.
+
 What is the purpose of semicolons in JavaScript? Are they always required?
+ANS: Semicolons indicate the end of a statement which just a collection of one or many expressions. The purpose is to indicate the end of a statement just like a period in a sentence ends one before starting another. They are not always required, but omitting them incorrectly can cause issues so it's recommended to include them until you fully understand the nuances.
+
 What causes a variable to return undefined?
-Write your own variable and do something to it in the eloquent.js file.
+ANS: A variable will return as undefined if you define a variable but do not give it a value.
+
 What does console.log do and when would you use it? What Ruby method(s) is this similar to?
-Write a short program that asks for a user to input their favorite food. After they hit return, have the program respond with "Hey! That's my favorite too!" (You will probably need to run this in the Chrome console (Links to an external site.) rather than node since node does not support prompt or alert). Paste your program into the eloquent.js file.
+ANS: console.log prints out something for the user to see. It's similar to using print in Ruby.
+
 Describe while and for loops
+ANS: While loops continue to do something as long as an expression evaluates to true. While loops will discontinue when the expression evaluates to false. For loops will do something for a certain number of times and then will discontinue when the maximum number of times has been reached.
+
 What other similarities or differences between Ruby and JavaScript did you notice in this section?
-Complete at least one of the exercises (Looping a Triangle, FizzBuzz, of Chess Board) in the eloquent.js file.
+ANS: I noticed unary, binary, and ternary operators follow the same syntax and looping is conceptually the same as well (In JavaScript and probably other languages too). I noticed that declaring variables requires the use of the keyword "var" first which Ruby does not. I also noticed the comments use different sytnax and incrementing a counter is even easier than using counter += 1 as counter++ can be used.
+
 
 Ch. 3: Functions
 What are the differences between local and global variables in JavaScript?
+ANS: Local variables are declared inside of functions and do not exist outside of the function. Global variables are declared outside of a function and can be used anywhere in the program. This is similar to Ruby.
+
 When should you use functions?
+ANS: You should use functions when your program has repeatable tasks that will require you to copy/paste a lot of code because the logic is similar. Creating functions to handle this is consistent with our emphasis on using DRY techniques.
+
 What is a function declaration?
-Complete the minimum exercise in the eloquent.js file.
+ANS: Function declaration is telling JavaScript that you will be creating a variable that is a function. It may include 0 to many arguments that are used inside of the function along with a series of statements that will be executed each time the function is called.
+
+
 
 Ch. 4: Data Structures: Objects and Arrays
-Skip the sections on the Lycanthrope's log, Computing Correlations, and sections from Further Arrayology to the Global Object, but read the chapter summary.
 What is the difference between using a dot and a bracket to look up a property? Ex. array.max vs array["max"]
-Create an object called me that stores your name, age, three favorite foods, and a quirk in your eloquent.js file.
+ANS: By using a dot you are accessing a property of a value and by using brackets you are first evaluating what's in the brackets before determining which value to display for the result.
+
 What is a JavaScript object with a name and value property similar to in Ruby?
+ANS: This structure is similar to a hash in Ruby.
 
 
 Release 2: Reflect
 
-In the text submission box, answer the following questions:
-
 What are the biggest similarities and differences between JavaScript and Ruby?
+ANS: The biggest similarity is that both are object oriented languages and so they share many of the same concepts. Specifically the types of objects available (Integers, strings, booleans), operators (+ - * /), and the collections of data (variables, arrays, objects).
+
 Was some of your Ruby knowledge solidified by learning another language? If so, which concepts?
+ANS: Yes, I think so. Learning iteration in Ruby was a challenge because there were so many different ways to approach a problem and we were constantly learning new ones. The ways we approach a problem in JavaScript feel similar so now we're really just learning how to implement the correct syntax. To me this is much easier than learning how we can solve the problem AND the syntax to do it.
+
 How do you feel about diving into JavaScript after reading these chapters?
+ANS: I feel pretty confident that I'll be able to learn JavaScript relatively smoothly. I think having Ruby under my belt will make me more efficient when learning JavaScript.
