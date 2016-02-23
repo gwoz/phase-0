@@ -124,3 +124,82 @@ Phase 1. Learning how to use the many tools available in Ruby over the next two 
 of time for me.
 
 =end
+
+
+
+
+# Reverse Words
+
+
+# I worked on this challenge [by myself].
+# This challenge took me [0.5] hours.
+
+# Pseudocode
+=begin
+INPUT: A sentence
+OUTPUT: The sentence with each word reversed
+STEPS:
+  Split the sentence into an index of an array when a space is encountered
+  reverse each word in the array 
+  Join the words in the array together with a space in between each word
+=end
+
+
+# Initial Solution
+my_sentence = "I like walking to work"
+p my_sentence.split(" ").map {|word| word.reverse}.join(" ")
+
+# Refactored Solution
+
+puts "Type a sentence!"
+sentence = gets.chomp
+sentence.split(" ").map {|word| word.reverse}.join(" ")
+
+# Reflection
+
+
+
+
+
+
+# Numbers to English Words
+
+
+# I worked on this challenge [by myself].
+# This challenge took me [0.5] hours.
+
+
+# Pseudocode
+=begin
+INPUT: Number
+OUTPUT: Number in english
+STEPS:
+  IF number is less than 20 
+    WHEN 1 then "One"
+    ...
+    WHEN 19 then "Nineteen"
+  IF number is greater than 20 and less than 30
+    WHEN 20 to less than 30 combine "Twenty" and use the same method for the last digit
+  ...
+  IF number is greater than 100 and less than 1000
+    THEN "One Hundred" and use the same method for the last two digits
+  IF number is greater than 1000 and less than 10,000
+    THEN "One Thousand" and use the same method for the last three digits
+  IF number is greater than 10,000 and less than 1,000,000
+    THEN use the same method for the first two digits plus "Thousand" 
+=end
+
+
+# Initial Solution
+
+
+
+
+# Refactored Solution
+
+
+
+
+
+
+# Reflection
